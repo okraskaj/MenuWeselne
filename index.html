@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Weselne — 27.06.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --paper: #fffdf9;
+      --ink: #2c2419;
+      --muted: #6b5f52;
+      --accent: #5c3d2e;
+      --gold: #b8956a;
+      --line: #e8dfd3;
+      --note-bg: #f5efe6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      min-height: 100vh;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 4px 24px rgba(44, 36, 25, 0.06);
+      padding: 2.5rem 2rem;
+    }
+
+    @media (min-width: 480px) {
+      .page {
+        padding: 3rem 3rem;
+      }
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ornament {
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.35em;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      line-height: 1.2;
+    }
+
+    .date {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      font-size: 1.35rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--gold);
+      letter-spacing: 0.04em;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      padding: 0.3rem 0;
+      padding-left: 1.1rem;
+      position: relative;
+    }
+
+    li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .note {
+      margin-top: 0.6rem;
+      padding: 0.65rem 0.85rem;
+      background: var(--note-bg);
+      border-left: 3px solid var(--gold);
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 2.5rem 0;
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .divider h2 {
+      border: none;
+      font-size: clamp(1.5rem, 4vw, 1.85rem);
+      letter-spacing: 0.25em;
+      margin: 0;
+      padding: 0;
+    }
+
+    .divider .sub {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.4em;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .portion-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 1.5rem 0 0.5rem;
+      letter-spacing: 0.1em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="ornament">✦ ✦ ✦</p>
+      <h1>Menu Weselne</h1>
+      <p class="date">27.06.2026</p>
+    </header>
+
+    <section>
+      <ul>
+        <li>Powitanie chlebem i solą</li>
+        <li>Toast winem musującym, 40 ml</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Zupa, 250 ml</h2>
+      <ul>
+        <li>Bulion z pieczonej kaczki z lanymi kluseczkami i oliwą pietruszkową</li>
+      </ul>
+      <p class="note">167 porcji — Krem z białych warzyw z chipsem z pietruszki (bez cebuli !!!!)</p>
+    </section>
+
+    <section>
+      <h2>Dania mięsne podane na półmiskach, 250 g</h2>
+      <ul>
+        <li>Zrazik wołowy po staropolsku z ogórkiem kiszonym, wędzonym boczkiem, cebulą i musztardą, duszony w sosie własnym</li>
+        <li>Roladka drobiowa ze szpinakiem i serem feta, z białym kurkowym sosem</li>
+        <li>Pan schabowy</li>
+        <li>Pieczony filet z łososia z sosem estragonowym</li>
+      </ul>
+      <p class="note">167 porcji — zestawu weganina (bez dodatku cebuli)</p>
+      <p class="note">5 porcji — nagetsy + frytki + marchewka (dzieci)</p>
+    </section>
+
+    <section>
+      <h2>Dodatki podane na półmiskach, 300 g</h2>
+      <ul>
+        <li>Ziemniaki z koperkiem</li>
+        <li>Ziemniaki pieczone</li>
+        <li>Kluski śląskie</li>
+        <li>Surówka z buraczków</li>
+        <li>Surówka z białej kapusty</li>
+        <li>Kapusta zasmażana</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Deser, 80 g</h2>
+      <ul>
+        <li>Szarlotka</li>
+        <li>Krem brulee — podajemy na śniadanie poprawinowe</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Zakąski vegańskie</h2>
+      <ul>
+        <li>Pasztet z warzyw i kasz</li>
+        <li>Hummus z buraka</li>
+        <li>Caponata</li>
+        <li>Tortilla z warzywami</li>
+        <li>Tatar z suszonych pomidorów i grillowanej cukinii</li>
+        <li>Boczniaki w oleju lnianym i kolendrą</li>
+        <li>Sałatka jarzynowa</li>
+        <li>Smalec z fasoli</li>
+        <li>Sałatka grecka</li>
+        <li>Roladki z bakłażana z twarożkiem z tofu</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Dania na ciepło, 600 g</h2>
+      <ul>
+        <li>Płonący udziec wieprzowy z kaszą gryczaną, zasmażaną kapustą i sosem z zielonym pieprzem</li>
+      </ul>
+      <p class="note">167 porcji — cieciezycy ze szpinakiem (bez cebuli)</p>
+    </section>
+
+    <section>
+      <h2>Barszcz czerwony wegański</h2>
+      <ul>
+        <li>Z pasztecikiem pieczarki-ser / pieczarki-kapusta</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Napoje, bez limitu</h2>
+      <ul>
+        <li>Kawa, herbata, woda niegazowana karafka</li>
+      </ul>
+    </section>
+
+    <p class="portion-note">50 porcji</p>
+
+    <div class="divider">
+      <h2>Stół Wiejski</h2>
+      <p class="sub">Menu</p>
+    </div>
+
+    <section>
+      <h2>Na zimno, 240 g</h2>
+      <ul>
+        <li>Wędliny z własnej wędzarni — schab, szynka</li>
+        <li>Kiełbasa swojska</li>
+        <li>Kaszanka</li>
+        <li>Salceson domowy</li>
+        <li>Pasztet wieprzowy</li>
+        <li>Smalec z ogórkami</li>
+        <li>Pstrąg z własnej wędzarni</li>
+        <li>Bochen wiejskiego chleba na zakwasie</li>
+        <li>Dodatki — chrzan, musztarda, żurawina</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Na ciepło, 310 g</h2>
+      <ul>
+        <li>Pieczone pierogi ruskie</li>
+        <li>Szaszłyk drobiowe, marynowane w ostrych przyprawach</li>
+        <li>Golonka wieprzowa gotowana w ciemnym piwie</li>
+        <li>Policzki wołowe w sosie demi glace</li>
+        <li>Pieczony sandacz z tymiankiem, podany na szpinaku</li>
+        <li>Pulpeciki drobiowe w sosie pomidorowym — danie polecane głównie dla dzieci</li>
+        <li>Pieczone ziemniaki</li>
+        <li>Smażone kopytka</li>
+      </ul>
+    </section>
+
+    <footer>Życzymy smacznego</footer>
+  </main>
+</body>
+</html>
