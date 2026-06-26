@@ -161,6 +161,31 @@
       line-height: 1;
     }
 
+    .veg-section {
+      margin-bottom: 2rem;
+      padding: 1rem 1.25rem 0.75rem;
+      background: var(--veg-bg);
+      border-radius: 4px;
+      border-left: 3px solid var(--veg-line);
+    }
+
+    .veg-section h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      border-bottom-color: var(--veg-line);
+    }
+
+    .veg-section h2::before {
+      content: "🥬";
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .veg-section li::before {
+      color: var(--veg);
+    }
+
     .note {
       margin-top: 0.6rem;
       padding: 0.65rem 0.85rem;
@@ -246,7 +271,7 @@
         <li>Roladka drobiowa ze szpinakiem i serem feta, z białym kurkowym sosem</li>
         <li>Kotlet schabowy</li>
         <li>Pieczony filet z łososia z sosem estragonowym</li>
-        <li class="veg">Zestaw weganina</li>
+        <li class="veg">Zestaw dla weganina: falafel, hummus, sałatka, frytki, ostry sos, chlebek pita, </li>
         <li class="kids"> Nuggetsy + frytki + marchewka </li>
       </ul>
     </section>
@@ -263,8 +288,21 @@
       </ul>
     </section>
 
-
-    
+    <section class="veg-section">
+      <h2>Zakąski vegańskie</h2>
+      <ul>
+        <li>Pasztet z warzyw i kasz</li>
+        <li>Hummus z buraka</li>
+        <li>Caponata</li>
+        <li>Tortilla z warzywami</li>
+        <li>Tatar z suszonych pomidorów i grillowanej cukinii</li>
+        <li>Boczniaki w oleju lnianym i kolendrą</li>
+        <li>Sałatka jarzynowa</li>
+        <li>Smalec z fasoli</li>
+        <li>Sałatka grecka</li>
+        <li>Roladki z bakłażana z twarożkiem z tofu</li>
+      </ul>
+    </section>
 
     <section>
       <h2>Dania na ciepło</h2>
