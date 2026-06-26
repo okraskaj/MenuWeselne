@@ -6,7 +6,7 @@
   <title>Menu Weselne — 27.06.2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #faf7f2;
@@ -17,6 +17,12 @@
       --gold: #b8956a;
       --line: #e8dfd3;
       --note-bg: #f5efe6;
+      --veg: #4a7c59;
+      --veg-bg: #f3f8f4;
+      --veg-line: #b8d4be;
+      --kids: #b87850;
+      --kids-bg: #fdf6f1;
+      --kids-line: #e8c9b5;
     }
 
     * {
@@ -68,7 +74,7 @@
     h1 {
       font-family: "Cormorant Garamond", Georgia, serif;
       font-weight: 500;
-      font-size: clamp(2rem, 6vw, 2.75rem);
+      font-size: clamp(2.25rem, 6.5vw, 3.1rem);
       letter-spacing: 0.06em;
       color: var(--accent);
       line-height: 1.2;
@@ -119,6 +125,42 @@
       font-weight: 700;
     }
 
+    li.veg,
+    li.kids {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.35rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+    }
+
+    li.veg {
+      background: var(--veg-bg);
+      border-left: 3px solid var(--veg-line);
+    }
+
+    li.veg::before {
+      content: "🥬";
+      position: static;
+      flex-shrink: 0;
+      font-size: 1.05rem;
+      line-height: 1;
+    }
+
+    li.kids {
+      background: var(--kids-bg);
+      border-left: 3px solid var(--kids-line);
+    }
+
+    li.kids::before {
+      content: "👶";
+      position: static;
+      flex-shrink: 0;
+      font-size: 1.05rem;
+      line-height: 1;
+    }
+
     .note {
       margin-top: 0.6rem;
       padding: 0.65rem 0.85rem;
@@ -166,9 +208,18 @@
       margin-top: 2rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--line);
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       color: var(--muted);
       letter-spacing: 0.15em;
+    }
+
+    footer .signature {
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(2.4rem, 8vw, 3.4rem);
+      color: var(--accent);
+      letter-spacing: 0.02em;
+      margin-top: 0.5rem;
+      line-height: 1.3;
     }
   </style>
 </head>
@@ -181,34 +232,27 @@
     </header>
 
     <section>
-      <ul>
-        <li>Powitanie chlebem i solą</li>
-        <li>Toast winem musującym, 40 ml</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Zupa, 250 ml</h2>
+      <h2>Zupa</h2>
       <ul>
         <li>Bulion z pieczonej kaczki z lanymi kluseczkami i oliwą pietruszkową</li>
+        <li class="veg">Krem z białych warzyw z chipsem z pietruszki </li>
       </ul>
-      <p class="note">167 porcji — Krem z białych warzyw z chipsem z pietruszki (bez cebuli !!!!)</p>
     </section>
 
     <section>
-      <h2>Dania mięsne podane na półmiskach, 250 g</h2>
+      <h2>Dania główne podane na półmiskach</h2>
       <ul>
         <li>Zrazik wołowy po staropolsku z ogórkiem kiszonym, wędzonym boczkiem, cebulą i musztardą, duszony w sosie własnym</li>
         <li>Roladka drobiowa ze szpinakiem i serem feta, z białym kurkowym sosem</li>
-        <li>Pan schabowy</li>
+        <li>Kotlet schabowy</li>
         <li>Pieczony filet z łososia z sosem estragonowym</li>
+        <li class="veg">Zestaw weganina</li>
+        <li class="kids"> Nuggetsy + frytki + marchewka </li>
       </ul>
-      <p class="note">167 porcji — zestawu weganina (bez dodatku cebuli)</p>
-      <p class="note">5 porcji — nagetsy + frytki + marchewka (dzieci)</p>
     </section>
 
     <section>
-      <h2>Dodatki podane na półmiskach, 300 g</h2>
+      <h2>Dodatki podane na półmiskach</h2>
       <ul>
         <li>Ziemniaki z koperkiem</li>
         <li>Ziemniaki pieczone</li>
@@ -219,36 +263,15 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Deser, 80 g</h2>
-      <ul>
-        <li>Szarlotka</li>
-        <li>Krem brulee — podajemy na śniadanie poprawinowe</li>
-      </ul>
-    </section>
+
+    
 
     <section>
-      <h2>Zakąski vegańskie</h2>
-      <ul>
-        <li>Pasztet z warzyw i kasz</li>
-        <li>Hummus z buraka</li>
-        <li>Caponata</li>
-        <li>Tortilla z warzywami</li>
-        <li>Tatar z suszonych pomidorów i grillowanej cukinii</li>
-        <li>Boczniaki w oleju lnianym i kolendrą</li>
-        <li>Sałatka jarzynowa</li>
-        <li>Smalec z fasoli</li>
-        <li>Sałatka grecka</li>
-        <li>Roladki z bakłażana z twarożkiem z tofu</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Dania na ciepło, 600 g</h2>
+      <h2>Dania na ciepło</h2>
       <ul>
         <li>Płonący udziec wieprzowy z kaszą gryczaną, zasmażaną kapustą i sosem z zielonym pieprzem</li>
+        <li class="veg">Ciecierzyca ze szpinakiem, sałatka, ryż</li>
       </ul>
-      <p class="note">167 porcji — cieciezycy ze szpinakiem (bez cebuli)</p>
     </section>
 
     <section>
@@ -258,22 +281,13 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Napoje, bez limitu</h2>
-      <ul>
-        <li>Kawa, herbata, woda niegazowana karafka</li>
-      </ul>
-    </section>
-
-    <p class="portion-note">50 porcji</p>
-
     <div class="divider">
       <h2>Stół Wiejski</h2>
       <p class="sub">Menu</p>
     </div>
 
     <section>
-      <h2>Na zimno, 240 g</h2>
+      <h2>Na zimno</h2>
       <ul>
         <li>Wędliny z własnej wędzarni — schab, szynka</li>
         <li>Kiełbasa swojska</li>
@@ -288,20 +302,23 @@
     </section>
 
     <section>
-      <h2>Na ciepło, 310 g</h2>
+      <h2>Na ciepło</h2>
       <ul>
         <li>Pieczone pierogi ruskie</li>
         <li>Szaszłyk drobiowe, marynowane w ostrych przyprawach</li>
         <li>Golonka wieprzowa gotowana w ciemnym piwie</li>
         <li>Policzki wołowe w sosie demi glace</li>
         <li>Pieczony sandacz z tymiankiem, podany na szpinaku</li>
-        <li>Pulpeciki drobiowe w sosie pomidorowym — danie polecane głównie dla dzieci</li>
+        <li class="kids">Pulpeciki drobiowe w sosie pomidorowym — danie polecane głównie dla dzieci</li>
         <li>Pieczone ziemniaki</li>
         <li>Smażone kopytka</li>
       </ul>
     </section>
 
-    <footer>Życzymy smacznego</footer>
+    <footer>
+      <p>Życzymy smacznego</p>
+      <p class="signature">Gabrysia i Szymon</p>
+    </footer>
   </main>
 </body>
 </html>
